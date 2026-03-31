@@ -1,9 +1,10 @@
-import { handleAnonymousLogin } from "./firebase/fbInstance";
+import { handleAnonymousLogin, handleGoogleLogin } from "./firebase/fbInstance";
 
 function App() {
     return (
         <div>
             <button onClick={handleAnonymousLogin}>익명 로그인</button>
+            <button onClick={handleGoogleLogin}>구글 로그인</button>
         </div>
     );
 }
